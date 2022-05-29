@@ -1,0 +1,126 @@
+/* Globals */
+@import url('/css/globals.css');
+
+/* Variables */
+@import url('/css/variables.css');
+
+/* Fonts */
+@import url('/css/fonts.css');
+
+/* Nav */
+@import url('/css/navigations.css');
+
+/* Destinations - Moon */
+#destination::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('/starter-code/assets/destination/background-destination-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.destination_container {
+  max-width: 1400px;
+  margin: 0 auto; 
+}
+
+h5 {
+  color: var(--white);
+  margin: 100px 0;
+}
+
+h5 > strong {
+  color: hsl(0, 0%, 25%);
+  padding-right: 20px;
+}
+
+.destination_text_spacing {
+  width: 445px;
+}
+
+.destination_secondary_nav > ul {
+  display: flex;
+  list-style-type: none;
+  position: relative;
+  height: 34px;
+  color: var(--light);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  margin-bottom: 50px;
+}
+
+.destination_secondary_nav > ul li {
+  cursor: pointer;
+}
+
+.destination_secondary_nav > ul li:not(:first-child) {
+  padding-left: 40px;
+}
+
+.destination_secondary_nav_active {
+  position: absolute;
+  width: 41px;
+  height: 3px;
+  background: white;
+  bottom: 0;
+}
+
+.destination_text_spacing > p {
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+.destination_line_break {
+  width: 444px;
+  height: 1px;
+  background-color: #383B4B;
+  margin-bottom: 20px;
+}
+
+.destination_statistics {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.destination_statistics > div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  color: white;
+}
+
+.subheading_2 {
+  color: var(--light);
+}
+
+.destination_moon {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.destination_mars {
+  display: none;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.destination_europa {
+  display: none;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.destination_titan {
+  display: none;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}

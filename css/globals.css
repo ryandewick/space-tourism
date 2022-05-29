@@ -1,0 +1,71 @@
+/* Globals */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Bellefair', serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+h5,
+p,
+.subheading_1,
+.subheading_2 {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+h1 {
+  font-size: 150px;
+  margin: 30px 0;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 100px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 56px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 28px;
+  line-height: auto;
+  letter-spacing: 4.72px;
+  width: auto;
+  color: var(--light);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+p {
+  color: var(--light);
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.subheading_1 {
+  font-size: 28px;
+}
+
+.subheading_2 {
+  font-size: 16px;
+  letter-spacing: 2.35px;
+}

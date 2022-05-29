@@ -1,0 +1,153 @@
+/* Globals */
+@import url('/css/globals.css');
+
+/* Variables */
+@import url('/css/variables.css');
+
+/* Fonts */
+@import url('/css/fonts.css');
+
+/* Nav */
+@import url('/css/navigations.css');
+
+body {
+  height: 100vh;
+  background-color: #0C0E19;
+}
+
+
+#crew::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('/starter-code/assets/crew/background-crew-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.crew_container {
+  max-width: 1300px;
+  margin: 0 auto; 
+}
+
+h5 {
+  color: var(--white);
+  margin: 70px 0 0 0;
+}
+
+h5 > strong {
+  color: hsl(0, 0%, 25%);
+  padding-right: 20px;
+}
+
+.douglas {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 700px;
+}
+
+.douglas > div {
+  width: 50%;
+}
+
+p {
+  color: #D0D6F9;
+  width: 60%;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  margin-bottom: 100px;
+  
+}
+
+h4 {
+  color: hsl(0, 0%, 50%);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.dotted_nav {
+  display: flex;
+  list-style: none;
+}
+
+.dot {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #979797;
+  border: none;
+  cursor: pointer;
+}
+
+.dot:hover {
+  background-color: hsl(0, 0%, 50%);
+}
+
+.active {
+  background-color: white;
+}
+
+.dotted_nav > li:not(:first-child) {
+  margin-left: 24px;
+}
+
+.img {
+  position: absolute;
+  bottom: 0;
+  right: -100px;
+  width: 50%;
+}
+
+.mark {
+  display: none;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 700px;
+}
+
+.mark > div {
+  width: 50%;
+}
+
+.victor {
+  display: none;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 700px;
+}
+
+.victor > div {
+  width: 50%;
+}
+
+.anousheh {
+  position: relative;
+  max-width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 700px;
+}
+
+.anousheh > div {
+  width: 50%;
+}
