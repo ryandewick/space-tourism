@@ -69,7 +69,7 @@ p {
 
 
 /* Tablets */
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1150px) {
   #homepage::before {
     content: '';
     position: absolute;
@@ -90,7 +90,7 @@ p {
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-top: 50px;
+    margin-top: 5px;
     text-align: center;
     height: 100%;
     width: 100%;
