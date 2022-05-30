@@ -23,17 +23,19 @@
   background: url('/starter-code/assets/home/background-home-desktop.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   z-index: -10;
 }
 
 .homepage-container {
   display: flex;
   position: relative;
-  margin-top: 250px;
+  /* margin-top: 100px; */
+  transform: translateY(50%);
   height: 100%;
   width: 100%;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .homepage-container > div {
@@ -45,8 +47,15 @@
 }
 
 p {
+  font-size: 18px;
   letter-spacing: 1.8px;
 }
+
+h1 {
+  font-size: 150px;
+}
+
+
 
 /* Explore Button */
 #explore {
@@ -69,7 +78,7 @@ p {
 
 
 /* Tablets */
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1050px) {
   #homepage::before {
     content: '';
     position: absolute;
@@ -90,7 +99,7 @@ p {
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-top: 5px;
+    transform: translateY(5%);
     text-align: center;
     height: 100%;
     width: 100%;
@@ -104,6 +113,7 @@ p {
   
   .homepage-container > div p {
     max-width: 70%;
+    font-size: 16px;
     margin: auto;
   }
 
@@ -113,10 +123,6 @@ p {
 
   h5 {
     font-size: 20px;
-  }
-
-  p {
-    font-size: 16px;
   }
 
   /* Explore Button */
@@ -156,7 +162,7 @@ p {
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-top: 0px;
+    transform: translateY(5%);
     text-align: center;
     height: 100%;
     width: 100%;

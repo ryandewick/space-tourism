@@ -16,16 +16,26 @@
     <div>
       <div class="nav-line"></div>
     </div>
-    <div>
+    <div class="desktop_nav">
       <ul id="ul_nav">
-        <li><a href="/index.html"><strong>00</strong>Home</a>
-        </li>
+        <li><a href="/index.html"><strong>00</strong>Home</a></li>
         <li><a href="#"><strong>01</strong>Destination</a>
           <div class="nav-active"></div>
         </li>
         <li><a href="/starter-code/crew.html"><strong>02</strong>Crew</a></li>
         <li><a href="/starter-code/technology.html"><strong>03</strong>Technology</a></li>
       </ul>
+    </div>
+    <div class="mobile_nav">
+      <img id="hamburger" src="/starter-code/assets/shared/icon-hamburger.svg" alt="">
+      <img id="close" src="/starter-code/assets/shared/icon-close.svg" alt="">
+    </div>
+    <ul id="mobile_ul_nav">
+      <li><a href="/index.html"><strong>00</strong>Home</a></li>
+      <li><a href="/starter-code/destination.html"><strong>01</strong>Destination</a></li>
+      <li><a href="/starter-code/crew.html"><strong>02</strong>Crew</a></li>
+      <li><a href="/starter-code/technology.html"><strong>03</strong>Technology</a></li>
+    </ul>
     </div>
   </nav>
 </header>
@@ -194,5 +204,6 @@
 
 
   <script src="/js/destinations.js"></script>
+  <script src="/js/navigation.js"></script>
 </body>
 </html>
