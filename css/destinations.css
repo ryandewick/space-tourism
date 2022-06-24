@@ -218,6 +218,7 @@ html {
 @media only screen and (max-width: 786px) {
   html {
     background: url('/starter-code/assets/destination/background-destination-mobile.jpg');
+    height: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
