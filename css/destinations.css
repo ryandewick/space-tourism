@@ -12,6 +12,7 @@
 
 html {
   background: url('/starter-code/assets/destination/background-destination-desktop.jpg');
+  width: 100%;
   height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -141,6 +142,8 @@ html {
     -o-background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 100%;
     z-index: -10;
   }
 
@@ -215,10 +218,11 @@ html {
   
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 480px) {
   html {
     background: url('/starter-code/assets/destination/background-destination-mobile.jpg');
-    height: 100%;
+    width: 480px;
+    height: auto;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -246,6 +250,6 @@ html {
   }
 
   .destination_statistics > div {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 }
