@@ -90,11 +90,12 @@ nav ul li strong {
 
 
 /* Tablets */
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   nav {
     display: flex;
     position: relative;
     align-items: flex-start;
+    justify-content: space-between;
     max-width: 100%;
     font-size: 16px;
     letter-spacing: 2.7px;
@@ -116,13 +117,43 @@ nav ul li strong {
     display: flex;
     align-items: right;
     justify-content: center;
-    padding-right: 0%;
+    padding-inline: 80px;
     height: 96px;
   }
 
   nav ul li {
     padding: 0 20px;
   }
+
+  nav strong {
+    display: none;
+  } 
+
+  .nav-active::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    height: 3px;
+    width: 50%;
+    background: white;
+  }
+  
+  #ul_nav li:hover:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    height: 3px;
+    width: 50%;
+    background: #979797;
+  }  
 }
 
 /* Mobile */
