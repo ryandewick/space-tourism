@@ -66,6 +66,21 @@ p {
   font-size: 18px;
 }
 
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.global_subheading {
+  color: var(--white);
+  margin: 50px 0 0 0;
+}
+
+.global_subheading > strong {
+  color: hsl(0, 0%, 25%);
+  padding-right: 20px;
+}
+
 .subheading_1 {
   font-size: 28px;
 }
@@ -73,4 +88,29 @@ p {
 .subheading_2 {
   font-size: 16px;
   letter-spacing: 2.35px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .global_subheading {
+    color: var(--white);
+    font-size: 22px;
+    margin: 10px 0 60px 0;
+  }
+
+  .global_subheading > strong {
+    color: hsl(0, 0%, 25%);
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .global_subheading {
+    color: var(--white);
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .global_subheading > strong {
+    padding-right: 0;
+  }
 }

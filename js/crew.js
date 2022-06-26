@@ -39,3 +39,26 @@ document.querySelectorAll('#anoushehNav').forEach(aNav => {
     anousheh.style.display = "flex"
   })
 });
+
+function dottedMenu() {
+  const mobile = document.querySelectorAll('.mobile')
+  const desktop = document.querySelectorAll('.desktop')
+
+  mobile.forEach(m => {
+    if (window.innerWidth <= 768) {
+      m.style.display = "flex"
+    } else {
+      m.style.display = "none"
+    }
+  });
+
+  desktop.forEach(d => {
+    if (window.innerWidth <= 768) {
+      d.style.display = "none"
+    } else {
+      d.style.display = "flex"
+    }
+  });
+}
+
+dottedMenu()
