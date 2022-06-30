@@ -136,6 +136,10 @@ html {
   justify-content: space-evenly;
 }
 
+.global_subheading {
+  margin-bottom: 100px;
+}
+
 @media only screen and (max-width: 1200px) {
 
   html {
